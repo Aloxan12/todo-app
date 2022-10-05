@@ -12,4 +12,8 @@ export class TodoInputComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  submitTodo(title:string){
+    this.todoTitle = title
+  }
+
 }
