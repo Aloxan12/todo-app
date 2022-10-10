@@ -15,6 +15,7 @@ export class TodoInputComponent implements OnInit {
 
   submitTodo(){
     this.todoTitleSubmit.emit(this.todoTitle)
+    this.todoTitle = ''
   }
 
 }
