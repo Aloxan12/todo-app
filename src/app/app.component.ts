@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'todo-app';
-  todoItems = [];
+  todoItems = [
+    {title: 'angular'},
+    {title: 'react'},
+  ];
 }
