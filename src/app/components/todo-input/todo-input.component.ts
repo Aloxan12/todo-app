@@ -7,14 +7,14 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 })
 export class TodoInputComponent implements OnInit {
   todoTitle: string = '';
-  @Output() submit = new EventEmitter<string>()
+  @Output() todoTitleSubmit = new EventEmitter<string>()
   constructor() {}
 
   ngOnInit(): void {
   }
 
   submitTodo(){
-    this.submit.emit(this.todoTitle)
+    this.todoTitleSubmit.emit(this.todoTitle)
   }
 
 }

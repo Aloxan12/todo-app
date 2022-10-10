@@ -14,6 +14,6 @@ export class AppComponent {
   ];
 
   addTodo(title: string){
-
+    console.log('nen', title)
   }
 }
