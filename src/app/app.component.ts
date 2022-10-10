@@ -12,4 +12,8 @@ export class AppComponent {
     {title: 'angular'},
     {title: 'react'},
   ];
+
+  addTodo(title: string){
+
+  }
 }
