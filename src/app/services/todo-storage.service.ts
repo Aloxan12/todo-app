@@ -5,12 +5,9 @@ import {TodoModel} from "../models/todo-model";
   providedIn: 'root'
 })
 export class TodoStorageService {
-  todoItems: TodoModel[] = [
-    {title: 'angular'},
-    {title: 'react'},
-  ];
+  todoItems: TodoModel[] = [];
 
-  constructor() { }
+  constructor() {  }
 
   addTodo(title: string){
     this.todoItems.push({title})
