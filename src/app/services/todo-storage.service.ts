@@ -12,4 +12,7 @@ export class TodoStorageService {
   addTodo(title: string){
     this.todoItems.push({title})
   }
+  removeTodo(todoItemIndex: number){
+    this.todoItems.splice(todoItemIndex, 1)
+  }
 }

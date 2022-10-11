@@ -4,5 +4,7 @@
 <app-todo-input (todoTitleSubmit)="addTodo($event)"></app-todo-input>
 
 <ul>
-  <li *ngFor="let todo of todoItems">{{todo.title}}</li>
+  <li *ngFor="let todo of todoItems; index as i">
+    <app-todo-input [todo]="todo" (removeTodo)="removeTodo(i)"></app-todo-input>
+  </li>
 </ul>
