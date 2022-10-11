@@ -8,12 +8,5 @@ import {TodoModel} from "./models/todo-model";
 })
 export class AppComponent {
   title = 'todo-app';
-  todoItems: TodoModel[] = [
-    {title: 'angular'},
-    {title: 'react'},
-  ];
 
-  addTodo(title: string){
-    this.todoItems.push({title})
-  }
 }
